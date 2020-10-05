@@ -19,7 +19,7 @@ public class PingListener implements Listener {
     }
 
     @EventHandler
-    public void onProxyPing(PlayerHandshakeEvent event) {
+    public void onPlayerHandshake(PlayerHandshakeEvent event) {
         String hostName = event.getHandshake().getHost();
         if (!hostNames.contains(hostName)) {
             log.info("接続許可外のHostNameでの接続試行が確認されました。ホスト名：" + hostName);
