@@ -1,0 +1,3 @@
+name: Restrict Hostname
+version: ${project.version}
+main: city.genkoku.restricthostname.RestrictHostname
